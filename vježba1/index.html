@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Naslov</h1>
+    <h2>Podnaslov</h2>
+    <p>Odlomak 1</p>
+    <p>Oldomak 2</p>
+
+    <form name="login" id="form_login" enctype="multipart/form-data" action="main.php" method="POST" onSubmit="return checkForm()">
+        <div align="center">
+          <center>
+          <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" height="100%">
+            <tr>
+              <td width="25%" height="100%" align="center">&nbsp;</td>
+              <td width="50%" height="100%" align="center">
+              
+              <fieldset style="padding: 10px; font-family:Verdana; font-size:10px; color: #BBBBBB; border: 1px solid #BBBBBB;">
+              <legend>.: <b>VVG Pretinac - LOGIN</b> :. </legend>
+              
+              <table border="0" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+                <tr>
+                  <td width="100%" height="20" colspan="2">
+                  <p align="center">
+                  <img border="0" src="img/vvg-logo-2014-header-blue.png" width="350" height="75"></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="20" colspan="2" align="center"></td>
+                </tr>
+      
+                <!--
+                <tr>
+                  <td width="100%" height="20" colspan="2" align="left">
+                  Poštovani,
+                  <br /><br />
+                  Ovim Vas putem obavještavam da će Služba za informatičku podršku od 2.ožujka 2019. s početkom u 19:00 sati do 3.ožujka 2019. do 16:00 sati, izvršiti aktivnost održavanja aplikacije ?Pretinac?. U tom vremenu, rad na aplikaciji ?Pretinac? neće biti moguć, te Vas ispred Službe za informatičku podršku molim za strpljenje i razumijevanje.
+                  <br /><br />
+                  Za sva pitanja, prijedloge ili kritike budite slobodni kontaktirati nas putem elektroničke pošte na adresu: informaticka.podrska@vvg.hr
+                  </td>
+                </tr>
+                -->
+      
+                <tr>
+                  <td width="50%" height="20" align="right">korisničko ime:</td>
+                  <td width="50%" height="20">
+                  <input name="login" type="text" class="box" id="username" style="width: 103px;" size="30">@vvg.hr</td>
+                </tr>
+                <tr>
+                  <td width="50%" height="20" align="right">lozinka:</td>
+                  <td width="50%" height="20">
+                  <input name="password" type="password" class="box" id="pass" style="width: 103px;" maxlength="30" value="" onKeyPress="javascript: if(event.keyCode == 13) submit();" size="20"></td>
+                </tr>
+                <tr>
+                  <td width="50%" height="20">&nbsp;</td>
+                  <td width="50%" height="20">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td width="100%" height="20" colspan="2">
+                  <p align="center"><input type="button" value="Login" name="btn_login" onClick="submitIt();"></td>
+                </tr>
+      
+            <tr>
+                  <td width="50%" height="20">&nbsp;</td>
+                  <td width="50%" height="20">&nbsp;</td>
+                </tr>
+      <!--
+      # 	  <tr>
+      #            <td width="50%" height="20" colspan="2" align="center" style='font-size:12px;color:red;font-weight:bold'>OBAVIJEST O PROMJENI LOZINKE</td>
+      #          </tr>
+      #
+      #	  <tr>
+      #            <td width="50%" height="20" colspan="2" align="center" style='font-size:11px;color:red;font-weight:bold'>Molimo sve koji nisu mijenjali svoje inicijalne lozinke da prije prijave promjene lozinku na <a href="https://login.aaiedu.hr/promjenazaporke/" title="https://login.aaiedu.hr/promjenazaporke/">https://login.aaiedu.hr/promjenazaporke/</a> kako nebi do&#353lo do zaključavanja računa.</td>
+      #          </tr>
+      #
+      #	  <tr>
+      #            <td width="50%" height="20" colspan="2" align="center" style='font-size:10px;color:black;font-weight:bold'>Kontakt podr&#353ke: informaticka.podrska@vvg.hr</td>
+      #          </tr>
+      -->
+      
+      <!--
+      # 	  <tr>
+      #            <td width="50%" height="20" colspan="2" align="center" style='font-size:12px;color:red;font-weight:bold'>OBAVIJEST O PREUZIMANJU STUDENTSKE KARTICE</td>
+      #          </tr>
+      #
+      #	  <tr>
+      #            <td width="50%" height="20" colspan="2" align="center" style='font-size:11px;color:black;font-weight:bold'>Mole se studenti koji nisu preuzeli svoje studentske kartice da to učine najkasnije do 10. travnja 2021 u Odjelu za planiranje, organizaciju i provedbu nastave u vremenu:</td>
+      #          </tr>
+      #
+      #	  <tr>
+      #            <td width="50%" height="20" colspan="2" align="center" style='font-size:10px;color:black;font-weight:bold'>Ponedjeljak, Srijeda, Petak od 8.30 do 15.30</td>
+      #          </tr>
+      #
+      #	  <tr>
+      #            <td width="50%" height="20" colspan="2" align="center" style='font-size:10px;color:black;font-weight:bold'>Utorak i Četvrtak od 10.00 do 17.30</td>
+      #          </tr>
+      #
+      #	  <tr>
+      #            <td width="50%" height="20" colspan="2" align="center" style='font-size:10px;color:black;font-weight:bold'>Studentska kartica je identifikacijska kartica studenta u Republici Hrvatskoj i koriste je redovni i izvanredni studenti.</td>
+      #          </tr>
+      -->
+      
+      
+      
+              </table>
+              
+              
+              </fieldset>
+          
+      
+      
+      <!--         
+      #         
+      #        <p>&nbsp;</p>
+      #       
+      #        <fieldset style="padding: 5px; font-family:Verdana; font-size:10px; color: #BBBBBB; border: 1px solid #BBBBBB;">
+      #        <legend>.: <b>VVG Pretinac - Upute</b> :. </legend>
+      #       
+      #        <p align="left">
+      #            - <a class="txt_10" title="Download" href="https://pretinac.vvg.hr/news_prilozi_download.php?id_prilog=3290">Studenti - Upute (2 MB)</a>
+      #        </p>
+      #        
+      #        <p align="left">
+      #            - <a class="txt_10" title="Download" href="https://pretinac.vvg.hr/news_prilozi_download.php?id_prilog=3289">Nastavnici - Upute (2 MB)</a>
+      #        </p>        
+      #        
+      #        </fieldset>
+      -->        
+              </td>
+              <td width="25%" height="100%" align="center">&nbsp;</td>
+            </tr>
+          </table>
+         
+      
+          </center>
+        </div>
+      </form>
+
+</body>
+</html>
